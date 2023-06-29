@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /adm/
+Disallow: /.idea/
+Disallow: /dist/
+Disallow: /node_modules/
+sitemap: https://octoground.ru/sitemap.xml
+Host: https://xn--b1abcnxidep5a0g.xn--p1ai/

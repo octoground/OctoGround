@@ -1,0 +1,21 @@
+{
+    "name": "vendor/packagea",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.2.0",
+        "yidas/yii2-bower-asset": "2.0.13",
+        "yiisoft/yii2": "2.0.13",
+        "yiisoft/yii2-bootstrap": "2.0.7",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "~2.0",
+        "vova07/yii2-imperavi-widget": "*",
+        "phpnt/yii2-chartjs": "^0.0.2"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}

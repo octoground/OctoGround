@@ -1,0 +1,8 @@
+{
+    "require": {
+        "vova07/yii2-imperavi-widget": "*",
+        "xvs32x/tinymce-responsivefilemanager": "^1.0",
+        "2amigos/yii2-ckeditor-widget": "^1.0@dev"
+    },
+    "minimum-stability": "dev"
+}

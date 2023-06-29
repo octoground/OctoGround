@@ -1,0 +1,111 @@
+button {
+  background: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@font-face {
+  font-family: "Mak";
+  src: url(/fonts/d/GothamPro/GothamPro.otf);
+}
+* {
+  font-family: "Mak", sans-serif !important;
+  letter-spacing: 1.5px;
+}
+
+* p {
+  line-height: 20px;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  outline: none;
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.max-width {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.transition3s {
+  transition: 0.3s;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.btn {
+  border: 1px solid rgba(35, 35, 35, 0.4);
+  border-radius: 30px;
+  padding: 20px 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.3s;
+}
+.btn p {
+  margin: 0 !important;
+}
+.btn:hover {
+  border: 1px solid rgb(35, 35, 35);
+}
+.btn:hover span {
+  transform: scale(1.2);
+  background-color: rgb(35, 35, 35);
+  margin: 10px 30px 0 0;
+}
+.btn span {
+  transition: 0.3s;
+  border-radius: 0;
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: rgba(35, 35, 35, 0.4);
+  margin: 10px 20px 0 0;
+}
+.btn span:after, .btn span:before {
+  content: "";
+  position: absolute;
+}
+
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.cursor-eye {
+  top: -50px;
+  left: -50px;
+  padding: 30px 18px;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: #ffe425;
+}/*# sourceMappingURL=standart.css.map */

@@ -1,0 +1,125 @@
+.indent {
+  margin-bottom: 45px;
+}
+.indent_main {
+  margin-top: 70px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: inherit !important;
+}
+
+.brief {
+  max-width: 750px;
+  margin: 100px auto 100px auto;
+}
+.brief p {
+  font-weight: bold;
+}
+.brief_contact .brief_input {
+  position: relative;
+}
+.brief_contact .brief_input input {
+  height: 20px;
+}
+.brief_contact .brief_input label {
+  display: block;
+  position: absolute;
+  top: 34px;
+  left: 16px;
+  opacity: 0.5;
+}
+.brief_contact .brief_input input:not(:-moz-placeholder-shown) + label {
+  top: 25px;
+  font-size: 13px;
+}
+.brief_contact .brief_input input:focus + label, .brief_contact .brief_input input:not(:placeholder-shown) + label {
+  top: 25px;
+  font-size: 13px;
+}
+.brief_contact .brief_input input:not(:-moz-placeholder-shown) {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.brief_contact .brief_input input:focus, .brief_contact .brief_input input:not(:placeholder-shown) {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.brief_contact .grid {
+  grid-template-columns: auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+}
+.brief_contact .left {
+  position: relative;
+}
+.brief_contact .left input {
+  width: calc(100% - 30px);
+}
+.brief_service p {
+  margin: 0px 0 25px 0;
+}
+.brief_service label {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  background: #f7f7f7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.brief_service input {
+  display: none;
+}
+.brief_service input:checked + label {
+  background: rgba(255, 228, 37, 0.8);
+}
+.brief_service_container {
+  flex-wrap: wrap;
+}
+.brief_service_container div {
+  margin-right: 10px;
+}
+.brief_input {
+  margin-top: 10px;
+}
+.brief_input input, .brief_input textarea {
+  width: 100%;
+  margin: 10px 0 0px 0;
+  border-radius: 5px;
+  padding: 20px 15px;
+  border: 2px solid #f3f3f3;
+  resize: none;
+}
+.brief_input input::-moz-placeholder, .brief_input textarea::-moz-placeholder {
+  opacity: 0.5;
+}
+.brief_input input::placeholder, .brief_input textarea::placeholder {
+  opacity: 0.5;
+}
+.brief .btn {
+  transform: translateX(-50%);
+  margin: 35px 0 0 50%;
+  color: #232323;
+}
+
+.btn {
+  color: #232323;
+}
+.btn:hover {
+  color: #232323;
+}
+
+.btn_send {
+  justify-content: center;
+}/*# sourceMappingURL=brief.css.map */

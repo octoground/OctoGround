@@ -1,0 +1,616 @@
+@charset "UTF-8";
+.mobile {
+  display: none !important;
+}
+
+/* Large desktops and laptops */
+@media (max-width: 900px) {
+  html .mobile {
+    display: inherit !important;
+  }
+}
+/* Portrait tablets and medium desktops */
+/* Portrait tablets and small desktops */
+@media (min-width: 690px) and (max-width: 1180px) {
+  html .teem_info .el {
+    text-align: initial;
+  }
+  html .teem_info .left {
+    width: 60% !important;
+  }
+  html .teem_info .right {
+    width: 40% !important;
+    display: inherit !important;
+    margin: 0 !important;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (orientation: landscape) and (max-width: 1180px), (min-width: 768px) and (max-width: 991px) {
+  html .brief {
+    margin: 70px auto 40px auto;
+    padding: 0 10px;
+  }
+  html .brief_service {
+    margin-top: 30px;
+  }
+  html .brief .brief_service_container {
+    row-gap: 30px;
+  }
+  html .brief input, html .brief textarea {
+    width: calc(100% - 35px);
+  }
+  html #teem > div > div.right > div.flex > div > div.img_hover > img {
+    height: 40vh !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  html .teem_container .right .flex {
+    flex-wrap: nowrap !important;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  html .process {
+    padding: 40px 20px 20px 20px;
+  }
+  html .contact .advantages {
+    padding: 50px 0;
+  }
+  html .contact .advantages .right {
+    display: none;
+  }
+  html .contact .advantages .left {
+    width: 100%;
+    padding: 0 10px;
+  }
+  html .contact .advantages .left h3 {
+    line-height: 35px;
+  }
+  html .contact .advantages .left .btn {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 70px auto 0 auto;
+  }
+  html .contact_main {
+    height: 300px;
+  }
+  html .contact_main ul {
+    display: none;
+  }
+  html .contact_container {
+    width: -moz-max-content;
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  html .contact .teem {
+    padding: 50px 10px;
+  }
+  html .contact .teem_container {
+    flex-wrap: wrap;
+  }
+  html .contact .teem .teem_member {
+    margin: 0 !important;
+  }
+  html .contact .teem .teem_member img {
+    height: 40vh !important;
+  }
+  html .contact .teem_info .right, html .contact .teem_info #cursor {
+    display: none;
+  }
+  html .contact .teem_info .left > div {
+    padding: 0 20px;
+  }
+  html .contact .teem .left {
+    text-align: center;
+    width: 100%;
+  }
+  html .contact .teem .right {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  html .contact .teem .right .flex {
+    flex-wrap: wrap;
+  }
+  html .contact .teem .right .flex div {
+    width: 100%;
+  }
+  html .contact .teem .right .grid {
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    grid-row-gap: 50px;
+  }
+  html .contact .teem .right .grid img {
+    max-height: inherit;
+  }
+  html .menu {
+    padding: 30px 10px 30px 10px;
+  }
+  html menu.mobile {
+    display: none !important;
+  }
+  html .swiper.mobile {
+    display: none !important;
+  }
+  html .portfolio .btn {
+    margin: 20px auto 0 auto !important;
+  }
+  html .blog_header {
+    padding: 0 10px;
+  }
+  html .blog_header img {
+    width: 100%;
+  }
+  html .blog_body {
+    overflow: hidden;
+  }
+  html .blog_body .items_main {
+    flex-wrap: wrap;
+  }
+  html .blog_body .items_main .left, html .blog_body .items_main .right {
+    width: 100%;
+    padding: 0 10px;
+  }
+  html .blog_body .items_main .right {
+    margin: 20px 0 0 0;
+  }
+  html .blog_body .items_main .right h3 {
+    margin: 10px 0 20px 0;
+  }
+  html .blog_view_header ul {
+    margin-top: 10px;
+  }
+  html .blog_view_content {
+    padding: 0 40px 50px 40px;
+  }
+  html .blog_view_content .left {
+    width: 60%;
+  }
+  html .blog_view_content .right {
+    width: 40%;
+  }
+  html .blog .items_all {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0 10px;
+    margin: 60px 0 50px 0;
+  }
+  html .blog .autor {
+    margin-top: 20px !important;
+  }
+  html .blog .substrate {
+    background: none;
+  }
+  html footer {
+    padding: 40px 20px;
+  }
+  html footer .center {
+    transform: translateX(0);
+  }
+  html .main_blog, html .projects_content {
+    padding: 50px 40px;
+  }
+  html .service_content {
+    margin: 50px auto 0 auto !important;
+  }
+  html .service_content_header {
+    margin: 0 auto 20px auto;
+  }
+  html .main_blog .items {
+    margin-top: 20px;
+    gap: 30px;
+  }
+  html .fastform_content .left {
+    display: none;
+  }
+  html .fastform_content .right {
+    width: 100%;
+    padding: 50px 40px;
+  }
+  html .fastform_content .right span {
+    line-height: 25px;
+  }
+  html .fastform_content .right h4 {
+    margin: 20px 0;
+  }
+  html .menu {
+    width: calc(100vw - 20px);
+  }
+  html .main_content {
+    padding: 80px;
+    max-width: inherit;
+  }
+  html .main img {
+    width: 100%;
+  }
+  html .projects_content {
+    grid-template-columns: 250px auto;
+  }
+  html .projects_sticky_inner h3 {
+    margin-bottom: 10px;
+  }
+  html .projects_sticky_inner .btn {
+    padding: 10px 15px;
+  }
+  html .projects_sticky_inner .btn span {
+    width: 15px;
+    margin: 10px 10px 0 0;
+  }
+  html .projects_sticky_inner .btn p {
+    font-size: 15px;
+  }
+}
+/* Landscape phones and smaller */
+/*По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:*/
+@media (max-width: 650px) {
+  html .brief {
+    margin: 70px auto 40px auto;
+    padding: 0 10px;
+  }
+  html .brief_service {
+    margin-top: 30px;
+  }
+  html .brief .brief_service_container {
+    row-gap: 30px;
+  }
+  html .brief input, html .brief textarea {
+    width: calc(100% - 35px);
+  }
+  html .contact .advantages {
+    padding: 50px 0;
+  }
+  html .contact .advantages .right {
+    display: none;
+  }
+  html .contact .advantages .left {
+    width: 100%;
+    padding: 0 10px;
+  }
+  html .contact .advantages .left h3 {
+    line-height: 35px;
+  }
+  html .contact .advantages .left .btn {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 70px auto 0 auto;
+  }
+  html .contact_main {
+    height: 200px;
+  }
+  html .contact_main ul {
+    display: none;
+  }
+  html .contact_container {
+    width: -moz-max-content;
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  html .contact .teem {
+    padding: 50px 10px;
+  }
+  html .contact .teem_container {
+    flex-wrap: wrap;
+  }
+  html .contact .teem .teem_member {
+    margin: 0 !important;
+  }
+  html .contact .teem .teem_member:not(:last-child) {
+    margin-bottom: 60px !important;
+  }
+  html .contact .teem .teem_member img {
+    height: 250px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  html .contact .teem_info .right, html .contact .teem_info #cursor {
+    display: none;
+  }
+  html .contact .teem_info .left > div {
+    padding: 0 20px;
+  }
+  html .contact .teem .right {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  html .contact .teem .right .flex {
+    flex-wrap: wrap;
+  }
+  html .contact .teem .right .flex div {
+    width: 100%;
+  }
+  html .contact .teem .right .grid {
+    grid-template-columns: auto;
+  }
+  html .process {
+    padding: 40px 10px;
+  }
+  html .process h3 {
+    font-size: 50px;
+  }
+  html .process_header p {
+    margin-top: 20px;
+  }
+  html .process_item {
+    position: relative;
+  }
+  html .process_item .right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  html .process_item .right p {
+    font-weight: bold;
+    opacity: 0.2;
+    font-size: 145px;
+  }
+  html .portfolio_main {
+    margin: 100px auto 0 auto !important;
+    width: auto;
+    padding: 0 10px;
+  }
+  html .portfolio_items .item .btn > .flex > .flex {
+    margin: 0 14px 0 0;
+  }
+  html .portfolio_navigation ul {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding: 0 10px;
+    margin: 50px 0 30px 0;
+  }
+  html .portfolio_items {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 20px 50px 20px;
+    overflow: hidden;
+  }
+  html .blog_view_header {
+    margin-bottom: 30px;
+    padding: 100px 10px 30px 10px;
+  }
+  html .blog_view_header ul {
+    margin-top: 15px;
+  }
+  html .blog_view_header ul li {
+    text-transform: none !important;
+  }
+  html .blog_view_header ul li:not(:first-child) {
+    margin-left: 20px;
+  }
+  html .blog_view_content {
+    padding: 0 10px 30px 10px;
+    flex-wrap: wrap;
+  }
+  html .blog_view_content .left {
+    width: 100%;
+    padding: 0;
+  }
+  html .blog_view_content .right {
+    width: 100%;
+    margin-top: 50px;
+  }
+  html .blog_header {
+    padding: 0 10px;
+  }
+  html .blog_header img {
+    width: 100%;
+  }
+  html .blog_body {
+    overflow: hidden;
+  }
+  html .blog_body .items_main {
+    flex-wrap: wrap;
+  }
+  html .blog_body .items_main .left, html .blog_body .items_main .right {
+    width: 100%;
+    padding: 0 10px;
+  }
+  html .blog_body .items_main .right {
+    margin: 20px 0 0 0;
+  }
+  html .blog_body .items_main .right h3 {
+    margin: 10px 0 20px 0;
+  }
+  html .blog .items_all {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0 10px;
+    margin: 60px 0 50px 0;
+  }
+  html .blog .autor {
+    margin-top: 20px !important;
+  }
+  html .blog .substrate {
+    background: none;
+  }
+  html h3 {
+    font-size: 28px;
+  }
+  html .white-popup {
+    padding: 20px 15px !important;
+  }
+  html .brief_contact .grid {
+    grid-template-columns: auto;
+    grid-row-gap: 0;
+  }
+  html .desktop {
+    display: none;
+  }
+  html .menu {
+    width: calc(100% - 40px);
+    padding: 15px 20px;
+  }
+  html .menu menu {
+    margin: 70px 0;
+  }
+  html .menu menu li:nth-child(2) {
+    margin: 10px 0;
+  }
+  html .menu menu li a {
+    color: #232323;
+    text-align: center;
+  }
+  html .menu menu li a:hover {
+    color: #232323;
+  }
+  html .menu menu li a:hover:before {
+    animation: none !important;
+  }
+  html .menu > div {
+    justify-content: center;
+  }
+  html .menu .side {
+    height: calc(100vh - 40px);
+    width: calc(100% - 50px);
+    padding: 20px 25px;
+  }
+  html .menu .right {
+    position: relative;
+  }
+  html .menu .right > menu {
+    display: none;
+  }
+  html .menu .right .menu_btn {
+    position: fixed;
+    top: 30px;
+    right: 15px;
+    height: auto;
+  }
+  html .menu .right .menu_btn > div:after, html .menu .right .menu_btn > div:before, html .menu .right .menu_btn > div {
+    width: 25px;
+  }
+  html .menu .right .menu_btn > div::before {
+    bottom: 5px;
+  }
+  html .menu .right .menu_btn > div::after {
+    top: 5px;
+  }
+  html .main {
+    background-size: cover;
+  }
+  html .main img {
+    width: 100%;
+  }
+  html .main_content {
+    max-width: inherit;
+    padding: 100px 40px;
+    width: calc(100% - 120px);
+  }
+  html .main_content p {
+    text-align: center;
+  }
+  html .main_stroke {
+    font-size: 14px !important;
+  }
+  html .main_stroke::after, html .main_stroke::before {
+    width: 20px;
+  }
+  html .main_stroke::after {
+    left: 10px;
+  }
+  html .main_stroke::before {
+    right: 10px;
+  }
+  html .main_blog {
+    padding: 50px 20px;
+  }
+  html .main_blog header {
+    width: inherit;
+  }
+  html .main_blog .items {
+    gap: 20px;
+  }
+  html .main_blog .item {
+    width: inherit;
+  }
+  html .main_blog .item_info {
+    padding: 5%;
+  }
+  html .service {
+    padding: 0 10px;
+  }
+  html .service_content {
+    margin: 50px auto 0 auto !important;
+  }
+  html .service_content_header {
+    margin: 0 auto 40px auto;
+  }
+  html .projects_content {
+    padding: 50px 20px;
+    grid-template-columns: auto;
+  }
+  html footer {
+    padding: 20px 10px;
+  }
+  html footer > div {
+    flex-wrap: wrap;
+  }
+  html footer .logo {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 20px 0;
+  }
+  html footer > div > ul {
+    order: 2;
+  }
+  html footer .center {
+    order: 2;
+    transform: none;
+    width: 200px;
+    line-height: 20px;
+  }
+  html .main_fastform .left {
+    display: none;
+  }
+  html .main_fastform .right {
+    padding: 50px 20px;
+    width: 100%;
+  }
+  html .main_fastform .right > span {
+    line-height: 25px;
+  }
+  html .main_fastform .right h4 {
+    line-height: 45px;
+    margin: 25px 0 20px 0;
+  }
+  html .main_fastform .right .btn {
+    opacity: 1;
+  }
+  .swiper {
+    padding: 0 15px;
+  }
+  .swiper .projects_sticky h3 {
+    margin-bottom: 20px;
+  }
+  .swiper.mobile {
+    margin-top: 50px;
+  }
+  .swiper-slide {
+    margin-bottom: 50px;
+  }
+  .swiper img {
+    width: 100%;
+  }
+  .swiper .btn {
+    margin: 20px 0 15px 0;
+  }
+  .swiper .item_info span {
+    font-size: 15px;
+    display: block;
+    margin: 15px 0 10px 0;
+  }
+  .swiper .item_info h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  html .btn {
+    width: calc(100% - 60px);
+    border: 1px solid rgb(35, 35, 35);
+  }
+  html .btn span {
+    transform: scale(1.2);
+    background-color: rgb(35, 35, 35);
+    margin: 10px 30px 0 0;
+  }
+  html .btn p {
+    color: #000000;
+  }
+}
+/*Убрать белый фон у инпута, при выборе чего либо из подсказки*//*# sourceMappingURL=media.css.map */
