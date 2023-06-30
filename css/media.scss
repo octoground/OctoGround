@@ -41,7 +41,9 @@
 @media (orientation: landscape) and (max-width: 1180px), (min-width: 768px) and (max-width: 991px){
     html{
         .main{
-            height: calc(100vh - 60px);
+            height: calc(100vh - 55px);
+            background-size: inherit !important;
+            background-attachment: inherit;
         }
         .projects_sticky_inner {
             position: sticky;
@@ -296,9 +298,7 @@
 
 @media (max-width: 650px) {
     html{
-        .main{
-            height: calc(100vh - 60px);
-        }
+
         .portfolio_items .item .btn{
             width: fit-content !important;
             margin: 20px auto 0 auto !important;
@@ -570,6 +570,9 @@
     }
     html .main{
         background-size: cover;
+        height: calc(100vh - 55px);
+        background-size: inherit !important;
+        background-attachment: inherit;
         img{
             width: 100%;
         }

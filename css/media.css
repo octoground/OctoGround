@@ -33,7 +33,9 @@
 }
 @media (orientation: landscape) and (max-width: 1180px), (min-width: 768px) and (max-width: 991px) {
   html .main {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 55px);
+    background-size: inherit !important;
+    background-attachment: inherit;
   }
   html .projects_sticky_inner {
     position: sticky;
@@ -253,9 +255,6 @@
 /* Landscape phones and smaller */
 /*По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:*/
 @media (max-width: 650px) {
-  html .main {
-    height: calc(100vh - 60px);
-  }
   html .portfolio_items .item .btn {
     width: -moz-fit-content !important;
     width: fit-content !important;
@@ -503,6 +502,9 @@
   }
   html .main {
     background-size: cover;
+    height: calc(100vh - 55px);
+    background-size: inherit !important;
+    background-attachment: inherit;
   }
   html .main img {
     width: 100%;
