@@ -13,7 +13,9 @@ use yii\helpers\Url;
             <div class="btn mobile ">
                 <div class="flex">
                     <span class="flex"></span>
-                    <p>Перейти по ссылке</p>
+                    <!-- <p>Перейти по ссылке</p>
+                    <p>Перейти на сайт</p> -->
+                    <p>Оценить сайт</p>
                 </div>
 
             </div>

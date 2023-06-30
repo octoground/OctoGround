@@ -474,94 +474,117 @@ footer{
         }
     }
 }
+// .vh, .perc{
+    
+//         position: absolute;
+//         width: 100%;
+//         opacity: 0.5;
+//         font-size: 3em;
+//         color: blue;
+    
 
-// .brief {
-//     max-width: 750px;
-//     margin: 25px auto;
-
-//     p {
-//         font-weight: bold;
-//     }
-
-//     &_contact {
-//         &>p {
-//             font-size: 40px;
-//             margin-bottom: 20px;
-//         }
-
-//         .brief_input {
-//             position: relative;
-
-//             input {
-//                 height: 20px;
-//             }
-
-//             label {
-//                 display: block;
-//                 position: absolute;
-//                 top: 34px;
-//                 left: 16px;
-//                 opacity: .5;
-//             }
-
-//             input:focus+label,
-//             textarea:focus+label,
-//             input:not(:placeholder-shown)+label,
-//             textarea:not(:placeholder-shown)+label {
-//                 top: 25px;
-//                 font-size: 13px;
-
-//             }
-
-//             textarea:focus,
-//             textarea:not(:placeholder-shown),
-//             input:focus,
-//             input:not(:placeholder-shown) {
-//                 padding-top: 30px;
-//                 padding-bottom: 10px;
-//             }
-//         }
-
-//         .grid {
-//             grid-template-columns: auto auto;
-//             grid-column-gap: 30px;
-//             grid-row-gap: 15px;
-//         }
-
-//         .left {
-//             position: relative;
-
-//             input {
-//                 width: calc(100% - 30px);
-//             }
-//         }
-
-
-//     }
-
-//     &_input {
-//         margin-top: 10px;
-
-//         input,
-//         textarea {
-//             width: calc(100% - 35px);
-//             margin: 10px 0 0px 0;
-//             border-radius: 5px;
-//             padding: 20px 15px;
-//             border: 2px solid #f3f3f3;
-//             resize: none;
-
-//             &::placeholder {
-//                 opacity: .5;
-//             }
-//         }
-
-
-//     }
-
-//     .btn {
-//         transform: translateX(-50%);
-//         margin: 35px 0 0 50%;
-//         color: #232323;
-//     }
+  
 // }
+// .vh {
+//     height: 100vh;
+//     background-color: green;
+//     text-align: left;
+// }
+
+// .perc {
+//     position: fixed;
+//     height: 100%;
+//     background-color: red;
+//     text-align: center;
+// }
+
+.mfp-container .brief {
+    max-width: 750px;
+    margin: 25px auto;
+
+    p {
+        font-weight: bold;
+    }
+
+    &_contact {
+        &>p {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .brief_input {
+            position: relative;
+
+            input {
+                height: 20px;
+            }
+
+            label {
+                display: block;
+                position: absolute;
+                top: 34px;
+                left: 16px;
+                opacity: .5;
+            }
+
+            input:focus+label,
+            textarea:focus+label,
+            input:not(:placeholder-shown)+label,
+            textarea:not(:placeholder-shown)+label {
+                top: 25px;
+                font-size: 13px;
+
+            }
+
+            textarea:focus,
+            textarea:not(:placeholder-shown),
+            input:focus,
+            input:not(:placeholder-shown) {
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .grid {
+            grid-template-columns: auto auto;
+            grid-column-gap: 30px;
+            grid-row-gap: 15px;
+        }
+
+        .left {
+            position: relative;
+
+            input {
+                width: calc(100% - 30px);
+            }
+        }
+
+
+    }
+
+    &_input {
+        margin-top: 10px;
+
+        input,
+        textarea {
+            width: calc(100% - 35px);
+            margin: 10px 0 0px 0;
+            border-radius: 5px;
+            padding: 20px 15px;
+            border: 2px solid #f3f3f3;
+            resize: none;
+
+            &::placeholder {
+                opacity: .5;
+            }
+        }
+
+
+    }
+
+    .btn {
+        transform: translateX(-50%);
+        margin: 35px 0 0 50%;
+        color: #232323;
+    }
+}

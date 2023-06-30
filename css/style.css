@@ -432,4 +432,86 @@ footer ul li:first-child {
   margin-bottom: 15px;
   font-size: 30px;
   font-weight: bold;
+}
+
+.mfp-container .brief {
+  max-width: 750px;
+  margin: 25px auto;
+}
+.mfp-container .brief p {
+  font-weight: bold;
+}
+.mfp-container .brief_contact > p {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.mfp-container .brief_contact .brief_input {
+  position: relative;
+}
+.mfp-container .brief_contact .brief_input input {
+  height: 20px;
+}
+.mfp-container .brief_contact .brief_input label {
+  display: block;
+  position: absolute;
+  top: 34px;
+  left: 16px;
+  opacity: 0.5;
+}
+.mfp-container .brief_contact .brief_input input:not(:-moz-placeholder-shown) + label, .mfp-container .brief_contact .brief_input textarea:not(:-moz-placeholder-shown) + label {
+  top: 25px;
+  font-size: 13px;
+}
+.mfp-container .brief_contact .brief_input input:focus + label,
+.mfp-container .brief_contact .brief_input textarea:focus + label,
+.mfp-container .brief_contact .brief_input input:not(:placeholder-shown) + label,
+.mfp-container .brief_contact .brief_input textarea:not(:placeholder-shown) + label {
+  top: 25px;
+  font-size: 13px;
+}
+.mfp-container .brief_contact .brief_input textarea:not(:-moz-placeholder-shown), .mfp-container .brief_contact .brief_input input:not(:-moz-placeholder-shown) {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.mfp-container .brief_contact .brief_input textarea:focus,
+.mfp-container .brief_contact .brief_input textarea:not(:placeholder-shown),
+.mfp-container .brief_contact .brief_input input:focus,
+.mfp-container .brief_contact .brief_input input:not(:placeholder-shown) {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.mfp-container .brief_contact .grid {
+  grid-template-columns: auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+}
+.mfp-container .brief_contact .left {
+  position: relative;
+}
+.mfp-container .brief_contact .left input {
+  width: calc(100% - 30px);
+}
+.mfp-container .brief_input {
+  margin-top: 10px;
+}
+.mfp-container .brief_input input,
+.mfp-container .brief_input textarea {
+  width: calc(100% - 35px);
+  margin: 10px 0 0px 0;
+  border-radius: 5px;
+  padding: 20px 15px;
+  border: 2px solid #f3f3f3;
+  resize: none;
+}
+.mfp-container .brief_input input::-moz-placeholder, .mfp-container .brief_input textarea::-moz-placeholder {
+  opacity: 0.5;
+}
+.mfp-container .brief_input input::placeholder,
+.mfp-container .brief_input textarea::placeholder {
+  opacity: 0.5;
+}
+.mfp-container .brief .btn {
+  transform: translateX(-50%);
+  margin: 35px 0 0 50%;
+  color: #232323;
 }/*# sourceMappingURL=style.css.map */

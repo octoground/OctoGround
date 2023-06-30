@@ -17,21 +17,23 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         return '{{%users}}';
     }
 
-    public static function findIdentity($id){
+    public static function findIdentity($id)
+    {
 
         return static::findOne(['id' => $id]);
     }
 
-    public static function findIdentityByAccessToken($token, $type = null){
+    public static function findIdentityByAccessToken($token, $type = null)
+    {
         throw new NotSupportedException('"findIdentityByAccessToken" is not implemented.');
     }
 
     public static function findByUsername($username)
     {
-      
+
         $user = static::find()->where(['username' => $username])->asArray()->one();
-        
-        if($user){
+
+        if ($user) {
             foreach ($user as $usr) {
                 if (strcasecmp($usr, $username) === 0) {
                     return new static($user);

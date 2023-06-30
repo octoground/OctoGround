@@ -1,5 +1,5 @@
 <?php
-
+\app\assets\SiteAsset::register($this);
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model app\models\LoginForm */

@@ -25,7 +25,17 @@
   }
 }
 /* Landscape phones and portrait tablets */
+@media (orientation: landscape) {
+  #teem > div > div.right > div.teem_info.transition3s.active > div.flex > div.left.flex.transition3s.active > div {
+    height: 360px;
+    overflow: auto;
+  }
+}
 @media (orientation: landscape) and (max-width: 1180px), (min-width: 768px) and (max-width: 991px) {
+  html .projects_sticky_inner {
+    position: sticky;
+    top: calc(50% - 70px);
+  }
   html .brief {
     margin: 70px auto 40px auto;
     padding: 0 10px;
@@ -240,6 +250,11 @@
 /* Landscape phones and smaller */
 /*По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:*/
 @media (max-width: 650px) {
+  html .portfolio_items .item .btn {
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    margin: 20px auto 0 auto !important;
+  }
   html .brief {
     margin: 70px auto 40px auto;
     padding: 0 10px;

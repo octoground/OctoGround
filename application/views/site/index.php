@@ -5,6 +5,8 @@ use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
 
 ?>
+<!-- <div class="vh"></div>
+<div class="perc"></div> -->
 <div class="main flex">
     <div class="main_content">
         <p class="main_stroke">
@@ -135,7 +137,7 @@ use yii\bootstrap\ActiveForm;
             <p>Портфолио</p>
             <h3>Наши последние творения для Вашего ознакомления</h3>
             <a href="<?= Url::to(['/site/portfolio']) ?>" class="btn flex"><span class="flex"></span>
-                <p>Смотреть все проекты</p>
+                <p>Смотреть проекты</p>
             </a>
         </div>
     </div>

@@ -57,7 +57,7 @@ class SiteController extends Controller
 			$author = Teems::findOne(['id' => yii::$app->request->post()['id']]);
 			return json_encode(['content' => $this->renderPartial('include/_author', compact('author'))]);
 		}
-		return $this->render('Contact', compact('teems'));
+		return $this->render('contact', compact('teems'));
 	}
 	public function actionBrief()
 	{
