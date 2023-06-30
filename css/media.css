@@ -253,6 +253,9 @@
 /* Landscape phones and smaller */
 /*По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:*/
 @media (max-width: 650px) {
+  html .main {
+    height: calc(100vh - 60px);
+  }
   html .portfolio_items .item .btn {
     width: -moz-fit-content !important;
     width: fit-content !important;

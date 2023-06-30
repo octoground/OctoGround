@@ -296,6 +296,9 @@
 
 @media (max-width: 650px) {
     html{
+        .main{
+            height: calc(100vh - 60px);
+        }
         .portfolio_items .item .btn{
             width: fit-content !important;
             margin: 20px auto 0 auto !important;
