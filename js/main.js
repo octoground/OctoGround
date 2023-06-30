@@ -68,12 +68,12 @@ $(document).on('blur', 'form .input', function (e) {
  */
 
 window.addEventListener('resize', resize);
-window.addEventListener('load', resize);
+// window.addEventListener('load', resize);
 
-function resize() {
-    let vh = document.querySelector('.main');
-    vh.innerHTML = vh.offsetHeight;
+// function resize() {
+//     let vh = document.querySelector('.main');
+//     vh.innerHTML = vh.offsetHeight;
 
-    let perc = document.querySelector('.service');
-    perc.innerHTML = perc.offsetHeight
-}
+//     let perc = document.querySelector('.service');
+//     perc.innerHTML = perc.offsetHeight
+// }
