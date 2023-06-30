@@ -42,8 +42,7 @@
     html{
         .main{
             height: calc(100vh - 55px);
-            background-size: inherit !important;
-            background-attachment: inherit;
+            background-size: cover !important;
         }
         .projects_sticky_inner {
             position: sticky;
@@ -571,8 +570,7 @@
     html .main{
         background-size: cover;
         height: calc(100vh - 55px);
-        background-size: inherit !important;
-        background-attachment: inherit;
+        background-size: cover !important;
         img{
             width: 100%;
         }
