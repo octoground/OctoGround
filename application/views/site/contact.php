@@ -3,7 +3,18 @@
 
 use yii\helpers\Url;
 
+$this->title = 'О нас';
 
+$this->registerMetaTag(['name' => 'og:title', 'content' =>  $this->title]);
+$this->registerMetaTag(['name' => 'og:url', 'content' =>  'https://octoground.ru/site/about']);
+$this->registerMetaTag(['name' => 'og:description', 'content' => 'Немного о нас. Мы команда амбициозных профессионалов нацеленных на результат.']);
+$this->registerMetaTag(['name' => 'og:image', 'content' => Url::to(['/images/default/bg-octo.jpg'])]);
+
+
+
+$this->registerMetaTag(
+    ['name' => 'description', 'content' =>  'Создание и продвижение сайтов - Digital-agency OctoGround - создаем и продвигаем современные и продающие сайты. Звоните +7 (922) 777-45-46']
+);
 ?>
 
 <div class="contact top">

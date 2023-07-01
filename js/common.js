@@ -13,6 +13,7 @@ $(document).ready(function (e) {
         $('.menu').addClass('scroll');
     }
 });
+
 $(document).on('click', '.side_btn_toggle, .side_sub', function (e) {
     $('.side').toggleClass('active');
     $('.side_sub').toggleClass('active');

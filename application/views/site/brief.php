@@ -2,8 +2,19 @@
 
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 \app\assets\BriefAsset::register($this);
+$this->title = 'Заполните бриф';
+
+$this->registerMetaTag(['name' => 'og:title', 'content' =>  $this->title]);
+$this->registerMetaTag(['name' => 'og:url', 'content' =>  'https://octoground.ru/site/brief']);
+$this->registerMetaTag(['name' => 'og:description', 'content' => 'Расскажите нам о своем проекте']);
+$this->registerMetaTag(['name' => 'og:image', 'content' => Url::to(['/images/default/bg-octo.jpg'])]);
+
+$this->registerMetaTag(
+    ['name' => 'description', 'content' =>  'Создание и продвижение сайтов - Digital-agency OctoGround - создаем и продвигаем современные и продающие сайты. Звоните +7 (922) 777-45-46']
+);
 ?>
 <div class="brief">
     <div class="header">

@@ -4,6 +4,17 @@
 use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
 
+$this->title = 'Digital agency OctoGround';
+
+$this->registerMetaTag(['name' => 'og:title', 'content' =>  $this->title]);
+$this->registerMetaTag(['name' => 'og:url', 'content' =>  'https://octoground.ru/site/index']);
+$this->registerMetaTag(['name' => 'og:description', 'content' => 'Создание и продвижение сайтов - Digital-agency OctoGround - создаем и продвигаем современные и продающие сайты. Звоните +7 (952) 710-72-31']);
+$this->registerMetaTag(['name' => 'og:image', 'content' => Url::to(['/images/default/bg-octo.jpg'])]);
+
+
+$this->registerMetaTag(
+    ['name' => 'description', 'content' =>  'Создание и продвижение сайтов - Digital-agency OctoGround - создаем и продвигаем современные и продающие сайты. Звоните +7 (952) 710-72-31']
+);
 ?>
 
 <div class="main flex">
@@ -38,7 +49,7 @@ use yii\bootstrap\ActiveForm;
 
             <a href="#connect" class="service_content_item connect" data-effect="mfp-move-horizontal" data-type="Разработка">
                 <div class="flex">
-                    <img src="" alt="">
+                    <img src="<?= Url::to(['/images/default/icon/developer.png']) ?>" alt="Мы используем исключительно современные технологии и методы. Таким образом мы обеспечиваем надежность, качество и быстродействие.">
                 </div>
 
 
@@ -51,7 +62,7 @@ use yii\bootstrap\ActiveForm;
             </a>
             <a href="#connect" class="service_content_item connect" data-effect="mfp-move-horizontal" data-type="Маркетинг">
                 <div class="flex">
-                    <img src="" alt="">
+                    <img src="<?= Url::to(['/images/default/icon/marketing.png']) ?>" alt="Мы используем комплекс мероприятий по продвижению, обеспечивающий максимальный результат сближающий ваш бизнес с целевой аудиторией.">
                 </div>
 
 
@@ -64,7 +75,7 @@ use yii\bootstrap\ActiveForm;
             </a>
             <a href="#connect" class="service_content_item connect" data-effect="mfp-move-horizontal" data-type="Сопровождение">
                 <div class="flex">
-                    <img src="" alt="">
+                    <img src="<?= Url::to(['/images/default/icon/escort.png']) ?>" alt="Устарел сайт? Нет нужного функционала? Мы справимся с любой задачей любой сложности. Гарантии! Качество! Скидки!">
                 </div>
 
 
@@ -77,7 +88,7 @@ use yii\bootstrap\ActiveForm;
             </a>
             <a href="#connect" class="service_content_item connect" data-effect="mfp-move-horizontal" data-type="Копирайт">
                 <div class="flex">
-                    <img src="" alt="">
+                    <img src="<?= Url::to(['/images/default/icon/copy.png']) ?>" alt="Написание качественных, интересных и полезных текстов, которые не оставят ваших посетителей равнодушними.">
                 </div>
 
 

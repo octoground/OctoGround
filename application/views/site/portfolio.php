@@ -2,6 +2,20 @@
 \app\assets\PortfolioAsset::register($this);
 
 use yii\helpers\Url;
+
+$this->title = 'portfolio';
+
+$this->registerMetaTag(['name' => 'og:title', 'content' =>  $this->title]);
+$this->registerMetaTag(['name' => 'og:url', 'content' =>  'https://octoground.ru/site/portfolio']);
+$this->registerMetaTag(['name' => 'og:description', 'content' =>  'Здесь представлены все наши проекты. В каждый из них мы вкладывались по полной. Находили пути решения сложных и интресных задач. Благодаря нашим решениям клиенты получаюбт больше выгоды. Мы поможем Вашему бизнесу стать сильнее!']);
+$this->registerMetaTag(['name' => 'og:image', 'content' => Url::to(['/images/default/bg-octo.jpg'])]);
+
+
+$this->registerMetaTag(
+    ['name' => 'description', 'content' =>  'Создание и продвижение сайтов - Digital-agency OctoGround - создаем и продвигаем современные и продающие сайты. Звоните +7 (952) 710-72-31']
+);
+
+
 ?>
 <div class="portfolio">
     <div class="portfolio_main max-width">

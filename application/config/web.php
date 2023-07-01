@@ -54,11 +54,12 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                
-                // '/' => 'site/main',
                 '/' => 'site/main',
+                'blog/' => 'blog/index',
                 'blog/view/<id>' => 'blog/view',
-                
+                'portfolio' => 'site/portfolio',
+                'about' => 'site/about',                
+                'brief' => 'site/brief',                
             ],
         ],
 

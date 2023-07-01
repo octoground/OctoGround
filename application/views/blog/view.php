@@ -3,7 +3,17 @@
 
 use yii\helpers\Url;
 
+$this->title = $article->header;
 
+$this->registerMetaTag(['name' => 'og:title', 'content' =>  $this->title]);
+$this->registerMetaTag(['name' => 'og:url', 'content' =>  'https://octoground.ru/blog/index']);
+$this->registerMetaTag(['name' => 'og:description', 'content' => $article->desc]);
+$this->registerMetaTag(['name' => 'og:image', 'content' => Url::to([$article->img])]);
+
+
+$this->registerMetaTag(
+    ['name' => 'description', 'content' => $article->desc]
+);
 ?>
 
 <div class="blog">
