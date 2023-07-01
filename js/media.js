@@ -1,6 +1,7 @@
 var phone = $('html').width() < 900;
+var iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
 
-if (phone) {
+if (phone || iOS) {
     $(document).on('click', '.portfolio_items .item', function (e) {
         e.preventDefault();
     });

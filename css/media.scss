@@ -37,8 +37,40 @@
         height: 360px;
         overflow: auto;
     }
+
+    
 }
-@media (orientation: landscape) and (max-width: 1180px), (min-width: 768px) and (max-width: 991px){
+@supports (-webkit-touch-callout: none){
+    @media (orientation: landscape), (max-width: 1180px){
+        html .main{
+            &_stroke{
+        
+                &::after, &::before{
+                    width: 20px;
+                }
+                &::after{
+                    left: 5px;
+                }
+                &::before{
+                    right: 10px;
+                }
+            }
+        }
+    }
+    
+}
+@media (orientation: landscape) and (max-height: 420px){
+    #container > div.main.flex > div.main_fraime{
+        display: none !important;
+    }
+    #container > div.main.flex > div.main_content{
+        border: none;
+        margin-top: 60px;
+        padding: 20px 40px;
+    }
+    
+}
+@media (orientation: landscape) and (max-width: 1180px), (min-width: 768px) and (max-width: 1181px){
     html{
         .main{
             height: calc(100vh - 55px);
@@ -165,6 +197,9 @@
         .portfolio .btn{
             margin: 20px auto 0 auto !important;
         }
+        .portfolio_items{
+            overflow: hidden;
+        }
         .blog{
             &_header{
                 padding: 0 10px;
@@ -258,6 +293,7 @@
             width: calc(100vw - 20px);
         }
         .main{
+            background-attachment: scroll;
             &_content{
                 padding: 80px;
                 max-width: inherit;
@@ -286,6 +322,7 @@
         }
     }
 }
+
 @media (min-width: 651px) and (max-width: 767px) {
     
 }
@@ -297,7 +334,15 @@
 
 @media (max-width: 650px) {
     html{
-
+        a{
+            // color: #555;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
         .portfolio_items .item .btn{
             width: fit-content !important;
             margin: 20px auto 0 auto !important;
@@ -568,9 +613,9 @@
         }
     }
     html .main{
-        background-size: cover;
         height: calc(100vh - 55px);
         background-size: cover !important;
+        background-attachment: scroll;
         img{
             width: 100%;
         }
@@ -588,7 +633,7 @@
                 width: 20px;
             }
             &::after{
-                left: 10px;
+                left: 5px;
             }
             &::before{
                 right: 10px;
