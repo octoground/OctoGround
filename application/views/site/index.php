@@ -5,8 +5,7 @@ use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
 
 ?>
-<!-- <div class="vh"></div>
-<div class="perc"></div> -->
+
 <div class="main flex">
     <div class="main_content">
         <p class="main_stroke">

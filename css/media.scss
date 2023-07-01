@@ -70,8 +70,24 @@
     }
     
 }
+@media (orientation: landscape){
+    html #container > div > div.header.blog_view_header.flex > div > ul > li.mobile{
+        display: none !important;
+    }
+    
+}
 @media (orientation: landscape) and (max-width: 1180px), (min-width: 768px) and (max-width: 1181px){
     html{
+        .menu > div.flex.max-width > div.right.flex > menu > li > a, .side_btn_offer a{
+            &:hover{
+                color: inherit !important;
+                &:before{
+
+                    animation: none !important;
+                }
+            }
+        }
+       
         .main{
             height: calc(100vh - 55px);
             background-size: cover !important;
@@ -334,14 +350,19 @@
 
 @media (max-width: 650px) {
     html{
-        a{
-            // color: #555;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+        .mfp-container {
+            .brief {
+                .grid.indent{
+                    grid-template-columns: auto;
+                    grid-row-gap: inherit;
+                }
+            }
+        }
+        .menu li a{
+            &:hover &:before{
+                animation: none !important;
+            }
+
         }
         .portfolio_items .item .btn{
             width: fit-content !important;

@@ -54,7 +54,18 @@
     padding: 20px 40px;
   }
 }
+@media (orientation: landscape) {
+  html #container > div > div.header.blog_view_header.flex > div > ul > li.mobile {
+    display: none !important;
+  }
+}
 @media (orientation: landscape) and (max-width: 1180px), (min-width: 768px) and (max-width: 1181px) {
+  html .menu > div.flex.max-width > div.right.flex > menu > li > a:hover, html .side_btn_offer a:hover {
+    color: inherit !important;
+  }
+  html .menu > div.flex.max-width > div.right.flex > menu > li > a:hover:before, html .side_btn_offer a:hover:before {
+    animation: none !important;
+  }
   html .main {
     height: calc(100vh - 55px);
     background-size: cover !important;
@@ -283,6 +294,13 @@
 /* Landscape phones and smaller */
 /*По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:*/
 @media (max-width: 650px) {
+  html .mfp-container .brief .grid.indent {
+    grid-template-columns: auto;
+    grid-row-gap: inherit;
+  }
+  html .menu li a:hover html .menu li a:before {
+    animation: none !important;
+  }
   html .portfolio_items .item .btn {
     width: -moz-fit-content !important;
     width: fit-content !important;
