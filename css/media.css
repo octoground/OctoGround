@@ -54,6 +54,11 @@
     padding: 20px 40px;
   }
 }
+@media (min-width: 600px) {
+  html body #container > div > div.header.blog_view_header.flex > div > ul > li.mobile {
+    display: none !important;
+  }
+}
 @media (orientation: landscape) {
   html #container > div > div.header.blog_view_header.flex > div > ul > li.mobile {
     display: none !important;
