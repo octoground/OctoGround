@@ -32,7 +32,7 @@ class AppAsset extends AssetBundle
     ];
 
     public $js = [
-        'js/device.js',
+        // 'js/device.js',
         'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js',
         'js/jquery.magnific-popup.min.js',
         'js/common.js',
